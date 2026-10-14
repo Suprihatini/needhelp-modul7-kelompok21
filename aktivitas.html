@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aktivitas Saya - NeedHelp</title>
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <script type="module" src="/assets/js/app.js"></script>
+</head>
+<body>
+  <!-- Header & Navigasi -->
+  <header>
+    <a href="index.html">
+      <img src="./assets/images/logo.svg" alt="NeedHelp - Beranda" width="160" height="40">
+    </a>
+    <nav aria-label="Navigasi Utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="aktivitas.html" aria-current="page">Aktivitas</a></li>
+        <li><a href="chat.html">Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <h1>Aktivitas Saya</h1>
+      <p>Kelola seluruh permintaan bantuan yang kamu buat dan tawaran bantuan yang sedang kamu jalankan.</p>
+    </header>
+
+    <!-- Ringkasan Statistik Aktivitas Pengguna (Tabel Semantik) -->
+    <section>
+      <h2>Ringkasan Status Aktivitas</h2>
+      <table>
+        <caption>Rekapitulasi Riwayat Interaksi dan Bantuan</caption>
+        <thead>
+          <tr>
+            <th scope="col">Status Aktivitas</th>
+            <th scope="col">Jumlah</th>
+            <th scope="col">Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Total Aktivitas</th>
+            <td>12</td>
+            <td>Keseluruhan riwayat partisipasi</td>
+          </tr>
+          <tr>
+            <th scope="row">Sedang Berlangsung</th>
+            <td>2</td>
+            <td>Membutuhkan tindak lanjut atau pelaksanaan</td>
+          </tr>
+          <tr>
+            <th scope="row">Selesai</th>
+            <td>8</td>
+            <td>Telah ditutup dan diberi ulasan</td>
+          </tr>
+          <tr>
+            <th scope="row">Dibatalkan</th>
+            <td>2</td>
+            <td>Tidak mencapai kesepakatan</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Daftar Aktivitas Berjalan & Riwayat -->
+    <section>
+      <h2>Daftar Aktivitas Terkini</h2>
+
+      <!-- Aktivitas 1: Sedang Berlangsung -->
+      <article>
+        <header>
+          <p><mark>Sedang Berlangsung</mark> &bull; Kategori: Bantuan Pindahan</p>
+          <h3><a href="detail-postingan.html">Butuh bantuan pindahan kos &amp; angkat lemari</a></h3>
+          <p>Partner Relawan: <strong>Budi Pratama</strong></p>
+        </header>
+        <p>Jadwal temu telah disepakati untuk Sabtu, 10 Oktober 2026 pukul 09.00 WIB di Pogung Baru.</p>
+        <p>
+          <a href="chat.html">Buka Obrolan Chat</a>
+          <a href="rating.html">Selesaikan &amp; Beri Ulasan</a>
+        </p>
+      </article>
+
+      <!-- Aktivitas 2: Menunggu Penawaran -->
+      <article>
+        <header>
+          <p><mark>Menunggu Respon</mark> &bull; Kategori: Ditemani Ngopi</p>
+          <h3><a href="detail-postingan.html">Teman ngopi santai di Cosan Palagan</a></h3>
+          <p>Dipasang: <time datetime="2026-10-06T14:00">2 jam yang lalu</time></p>
+        </header>
+        <p>Postingan aktif di katalog publik. Menunggu calon teman pendamping yang cocok.</p>
+        <p>
+          <a href="buat-postingan.html">Ubah Rincian</a>
+          <a href="#batalkan">Batalkan Postingan</a>
+        </p>
+      </article>
+
+      <!-- Aktivitas 3: Telah Selesai -->
+      <article>
+        <header>
+          <p><mark>Selesai</mark> &bull; Kategori: Pendampingan Belajar</p>
+          <h3>Belajar bersama kalkulus &amp; matriks</h3>
+          <p>Mitra: <strong>Rina Putri</strong> &bull; Selesai pada 4 Oktober 2026</p>
+        </header>
+        <p>Ulasan kamu: <em>&ldquo;Sangat ramah, komunikatif, dan penjelasannya mudah dipahami!&rdquo;</em> (5.0 / 5.0 &#9733;)</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Kaki Halaman (Footer) -->
+  <footer>
+    <p>&copy; 2026 NeedHelp - Need-Based Companion &amp; Help.</p>
+  </footer>
+</body>
+</html>
